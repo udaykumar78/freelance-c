@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
-struct
+struct stu_db{
+};
 void create(){
     FILE *fp;
     fp = fopen("stu_db.dat","rb+");
@@ -9,6 +10,16 @@ void create(){
             if(fp == NULL){
                 printf("Connot open file");
                 exit(1)
+}
+void disp(){
+    char c = fgetc(fp); 
+    while (c != EOF) 
+    { 
+        printf ("%c", c); 
+        c = fgetc(fptr); 
+    } 
+  
+    fclose(fptr); 
 }
 void main()
 {
