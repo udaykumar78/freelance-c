@@ -3,9 +3,9 @@
 struct
 void create(){
     FILE *fp;
-    fp = fopen("stu_db.bin","rb+");
+    fp = fopen("stu_db.dat","rb+");
         if(fp == NULL){
-            fp = fopen("stu_db.bin","wb+");
+            fp = fopen("stu_db.dat","wb+");
             if(fp == NULL){
                 printf("Connot open file");
                 exit(1)
