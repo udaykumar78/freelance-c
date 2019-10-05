@@ -12,6 +12,7 @@ void create(){
                 exit(1)
 }
 void disp(){
+    create();
     char c = fgetc(fp); 
     while (c != EOF) 
     { 
@@ -20,6 +21,9 @@ void disp(){
     } 
   
     fclose(fptr); 
+}
+void seek(){
+
 }
 void main()
 {
