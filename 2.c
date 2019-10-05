@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 struct stu_db{
+    int id;
+    char name[15],mail[10],course[10],grade[1];
 };
 void create(){
     FILE *fp;
