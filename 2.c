@@ -25,6 +25,8 @@ void disp(){
     fclose(fptr); 
 }
 void seek(){
+    create();
+    printf("enter 
 
 }
 void main()
